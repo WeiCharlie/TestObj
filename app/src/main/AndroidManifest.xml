@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.doing.ace">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 定位包、导航包需要的额外权限（注：基础权限也需要） -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".DoingApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".register.RegisterActivity" />
+        <activity android:name=".register.FinalRegisterActivity" />
+        <activity android:name=".selectcity.SelectCityActivity" />
+        <activity android:name=".search.SearchActivity" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".share.ShareActivity"
+            android:theme="@style/ShareTheme" />
+        <activity android:name=".main.mine.AboutUsActivity" />
+        <activity android:name=".main.mine.ConnectActivity" />
+        <activity android:name=".main.mine.UserProtocolActivity" />
+        <activity android:name=".main.mine.EditActivity" />
+        <activity android:name=".main.mine.MyCardActivity" />
+        <activity android:name=".main.mine.MyClassActivity" />
+        <activity android:name=".main.mine.MyOrderActivity" />
+        <activity android:name=".PermissionActivity" />
+        <activity android:name=".main.circle.PublishCircleActivity" />
+        <activity android:name=".main.mine.CardCouponActivity" />
+        <activity android:name=".main.feature.coach.StarCoachActivity" />
+        <activity android:name=".main.feature.gymcoach.GYMCoachActivity" />
+        <activity android:name=".main.feature.fclass.FeatureClassActivity" />
+        <activity android:name=".main.feature.venue.FeatureVenueActivity" />
+        <activity android:name=".main.feature.fvenue.FeatureContentVenueActivity" />
+        <activity android:name=".main.feature.hotclass.FeatureHotClassActivity" />
+
+        <!-- 高德appkey -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4c7c9f0ca21b2ede24e1e58faa4d5e8a" />
+        <!-- 高德service -->
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".details.coach.CoachDetailActivity" />
+        <activity android:name=".details.gym.GymDetailActivity"></activity>
+    </application>
+
+</manifest>

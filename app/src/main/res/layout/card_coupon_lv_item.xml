@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/daijinquan_bg"
+    android:paddingLeft="40dp">
+
+    <TextView
+        android:id="@+id/card_coupon_lv_item_daijin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="10元代金券"
+        android:textColor="@color/Black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_coupon_lv_item_daijin"
+        android:layout_marginBottom="19dp"
+        android:layout_marginTop="5dp"
+        android:text="消费满60可用"
+        android:textColor="@color/Black"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/use_btn_bg"
+        android:gravity="center"
+        android:text="立即使用"
+        android:textColor="@color/Black"
+        android:textSize="10sp" />
+</RelativeLayout>

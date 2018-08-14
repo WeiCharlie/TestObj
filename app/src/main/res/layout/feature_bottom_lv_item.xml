@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="115dp">
+
+    <ImageView
+        android:id="@+id/feature_bottom_lv_item_iv"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/yaling" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/feature_bottom_lv_item_iv"
+        android:text="基础拳击课"
+        android:textColor="#4a494a"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@id/feature_bottom_lv_item_iv"
+        android:text="共666人参与"
+        android:textColor="#4a494a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/feature_bottom_lv_item_iv"
+        android:text="每周三，周五/2个月"
+
+        android:textColor="#4a494a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toRightOf="@id/feature_bottom_lv_item_iv"
+        android:text="基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课基础拳课"
+        android:textColor="#4a494a" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@drawable/favorites"
+        id="@+id/tab_featured" />
+    <tab
+        icon="@drawable/group4"
+        id="@+id/tab_find" />
+    <tab
+        icon="@drawable/explore"
+        id="@+id/tab_circle" />
+    <tab
+        icon="@drawable/group6"
+        id="@+id/tab_mine" />
+</tabs>

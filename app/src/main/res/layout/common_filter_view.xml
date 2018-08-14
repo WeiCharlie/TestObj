@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/common_filter_llt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/filter_bg"
+    android:orientation="vertical"
+    android:paddingBottom="108dp"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/filter_white_bg"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="筛选类别（可多选）"
+            android:textColor="#9b9b9b"
+            android:textSize="13sp" />
+
+        <com.lzt.flowviews.view.FlowView
+            android:id="@+id/common_filter_fv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:fv_useGrid="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="筛选类别（可多选）"
+            android:textColor="#9b9b9b"
+            android:textSize="13sp" />
+
+        <com.lzt.flowviews.view.FlowView
+            android:id="@+id/common_filter_fv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:fv_useGrid="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="价格区间（元）"
+            android:textColor="#9b9b9b"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_et_bg"
+                android:gravity="center"
+                android:hint="最低价"
+                android:inputType="number"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/filter_line" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/filter_et_bg"
+                android:gravity="center"
+                android:hint="最高价"
+                android:inputType="number"
+                android:textColor="#9b9b9b"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/main_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:background="@drawable/filter_chongzhi"
+                android:text="重置"
+                android:textColor="@color/Black" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/filter_queding"
+                android:text="确定"
+                android:textColor="@color/White" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

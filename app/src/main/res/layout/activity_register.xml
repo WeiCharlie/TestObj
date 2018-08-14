@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register.RegisterActivity">
+
+    <include layout="@layout/only_doing_header_view" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/phone_nuber" />
+
+    <LinearLayout
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/phone_number_bg">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/quhao" />
+
+        <EditText
+            android:id="@+id/registerview_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="22dp"
+            android:background="@null"
+            android:hint="请输入您的手机号码"
+            android:singleLine="true"
+            android:textColorHint="@color/Grey" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/registerview_iv"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/register_btn_2" />
+</LinearLayout>
